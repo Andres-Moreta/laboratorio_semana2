@@ -1,13 +1,13 @@
 
 
-## 📝 Resumen del Problema
+##  Resumen del Problema
 El objetivo es clasificar si un usuario comprará un producto (variable `Purchased`) analizando su **Edad**, **Género** y **Salario Estimado**. Este análisis es vital y puede ser utilizado en campañas de marketing digital y dirigir anuncios a los segmentos con mayor probabilidad de conversión de compra.
 
 Es prácticamente un problema de **Clasificación Binaria** (0: No compra, 1: Sí compra).
 
 ---
 
-## 🛠️ Metodología
+##  Metodología
 
 ### 1. Análisis Exploratorio de Datos (EDA)
 Se realizó una inspección inicial para entender la distribución de los datos y la relación entre variables. Las técnicas utilizadas incluyen:
