@@ -31,3 +31,20 @@ Se compararon tres algoritmos fundamentales:
 1.  **Regresión Logística:** Como modelo base de clasificación lineal.
 2.  **Máquinas de Soporte Vectorial (SVM):** Para capturar fronteras de decisión más complejas.
 3.  **Árboles de Decisión:** Para un enfoque basado en reglas lógicas.
+
+
+#### SE AÑADIO GRAFICOS DE BARRAS Y DIAGRAMAS DE CAJA
+
+#### 1. Verificación del Balance de Clases
+Se utiliza un **Gráfico de Barras (`countplot`)** para visualizar la distribución de la variable objetivo `Purchased`. 
+* **Propósito:** Determinar si el dataset está balanceado (proporción similar de compradores y no compradores). 
+* **Importancia:** Un desequilibrio severo podría sesgar el modelo hacia la clase mayoritaria, requiriendo técnicas de ajuste adicionales.
+
+
+
+#### 2. Análisis de Distribución y Outliers (Boxplots)
+Se generan **Diagramas de Caja (`Boxplots`)** para las variables `Age` (Edad) y `EstimatedSalary` (Salario Estimado), segmentados según si el usuario realizó la compra o no.
+
+* **Edad por Compra:** Permite observar visualmente si existe una diferencia clara en la edad mediana de los compradores frente a los no compradores. Generalmente, este gráfico revela que los usuarios de mayor edad tienen una tendencia de compra superior.
+* **Salario por Compra:** Evalúa la dispersión del ingreso de los usuarios. Ayuda a identificar si el salario es un factor determinante por sí solo o si presenta mucho solapamiento entre ambas clases.
+* **Detección de Outliers:** Los puntos fuera de los "bigotes" del diagrama indican valores atípicos que podrían influir en el entrenamiento de modelos sensibles a la escala, como la Regresión Logística o SVM.
